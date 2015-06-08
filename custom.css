@@ -1,0 +1,367 @@
+@charset "UTF-8";
+
+/*
+	Home
+*/
+
+.home .entry-title {display: none}
+
+.home blockquote {
+  margin: 0 0 2em;
+  padding: 1em;
+  background: hsl(50, 100%, 90%);
+}
+.home blockquote p {
+	margin: 0;
+	font-style: normal;
+}
+
+.home blockquote:before {
+  display: none;
+}
+
+/*
+	Header
+
+*/
+
+#header {
+	margin: 0 0 1em 0;
+}
+
+#custom-header {
+	display: inline-block;
+	margin: 0 0 -56px 6px;
+	padding: 0 50px 0 0;
+	font-size: 36px;
+	font-weight: 300;
+	text-indent: 0;
+	line-height: 1.1;
+	overflow: hidden;
+	z-index: 8;
+}
+
+#hung {
+	margin-bottom: -40px;
+/*	-webkit-filter: drop-shadow(2px 2px 2px rgba(0,0,50,0.4));
+	-moz-filter: drop-shadow(2px 2px 2px rgba(0,0,50,0.4));
+	-ms-filter: drop-shadow(2px 2px 2px rgba(0,0,50,0.4));
+	filter: drop-shadow(2px 2px 2px rgba(0,0,50,0.4));*/
+}
+
+h1#custom-header a {
+	text-transform: uppercase;
+	color: dimgrey;
+/*	text-shadow: 2px 2px 6px rgba(48, 48, 124, 0.4);*/
+	transition: text-shadow .4s;
+}
+
+	h1#custom-header a:hover {
+		color: hsl(202, 100%, 23%) !important;
+		text-decoration: none;
+	}
+
+span#header-desc {
+	font-size: 18px;
+	top: -1.1em;
+	position: relative;
+	color: dimgrey;
+}
+
+span.first-word {
+	font-weight: 400;
+	color: rgb(237, 28, 36);
+}
+
+/*
+	Content Views
+
+*/
+
+.pagination > li > a, .pagination > li > span {
+	cursor: pointer;
+}
+
+.pt-cv-grid .pt-cv-1-col > p {
+	margin: 0 !important;
+	padding: 0;
+}
+
+.home .pt-cv-grid .pt-cv-1-col > a {
+	width: 300px;
+	height: 150px;
+	display: inline-block;
+	overflow: hidden;
+}
+
+.home .pt-cv-grid .pt-cv-1-col > a {
+	background: url(images/default-slide.png) no-repeat;
+	background-size: cover;
+}
+
+.home a.pt-cv-readmore {
+	display: none;
+}
+
+.pt-cv-content-item > * {
+	margin-bottom: 0 !important;
+}
+
+.pt-cv-scrollable {
+  margin: 0;
+}
+
+.pt-cv-thumbnail {
+  padding: 0 !important;
+  border: 0 !important;
+}
+
+/*	Slider
+*/
+
+.pt-cv-view .carousel-control {top: 50%}
+
+.carousel-caption .pt-cv-content {padding: 0}
+
+.pt-cv-view .carousel-indicators {display: none}
+
+.pt-cv-view .carousel-control.left {
+	left: 20px;
+	right: auto;
+}
+.pt-cv-view .carousel-control.right {right: 0}
+
+.pt-cv-view .carousel-caption {
+  bottom: 25px;
+}
+
+.carousel img {
+  border: 0;
+  padding: 0;
+}
+
+/*
+	Google Maps Builder
+
+*/
+
+html .map-icon-art-gallery:before {
+	content: "";
+	display: inline-block ;
+	width: 32px;
+	height: 32px;
+	background: url(../../plugins/google-maps-builder/public/assets/img/default-marker.png) no-repeat;
+
+}
+
+html i.map-icon-art-gallery {
+	top: -4px !important;
+}
+
+/*
+	Typograpghy
+*/
+
+.headline {
+	font-size: 2.4em;
+	font-weight: 300;
+	text-transform: none;
+/*	letter-spacing: -1.8px;*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Signika', sans-serif;
+	font-weight: 300;
+}
+
+h5, h6 {
+font-weight: 600;
+}
+
+h1 {font-size: 2.4em}
+h2 {font-size: 2.1em}
+h3 {font-size: 1.9em}
+h4 {font-size: 1.6em}
+h5 {font-size: 1.3em}
+
+blockquote {
+	color: #444;
+	font-size: 1.2em;
+	padding: 0px 20px 0px 10px;
+}
+
+#intro-home {
+	border: 1px solid #DDD;
+	background: #FFF6CB;
+}
+
+.page .container > .row {
+	margin-top: -50px !important;
+}
+
+table td {
+	padding: 0 1em 1em;
+	margin: 0px;
+	border: none;
+	vertical-align: top;
+}
+
+table p {
+	line-height: 1.5;
+}
+
+.btn:hover, .reply a:hover, #searchsubmit:hover, #prevLink a:hover, #nextLink a:hover, .more-link:hover, #submit:hover, #comments #respond input#submit:hover, .container .gform_wrapper input.button:hover {
+	background: #30307c;
+}
+
+blockquote {
+	font-size: 1em;
+	line-height: 1.6;
+	margin: 10px;
+	padding: 0px 10px;
+}
+
+/*
+	Posts
+
+*/
+
+.post:nth-child(odd) {
+  background-color: rgba(0, 74, 117, 0.14);
+}
+.post:nth-child(even) {
+  background-color: #FFFBE6;
+}
+
+.post {
+  padding: 1em;
+  margin: 0;
+}
+
+/*
+	Sidebar Menu
+*/
+
+#sidebar ul.menu {
+	font-family: 'Signika', sans-serif;
+	list-style: none;
+}
+	#sidebar ul.menu li {
+		margin: 0;
+		width: 90%;
+	}
+	#sidebar ul.menu li a {
+		color: #ED1C24;
+	}
+
+#sidebar ul.menu li.first-level {
+	padding: 6px 0px 6px 30px;
+	background: #FFF6CB url(images/hung-list.png) no-repeat 6px 8px/20px;}
+
+#sidebar ul.menu li ul.sub-menu li ul.sub-menu li {
+	display: block;
+}
+
+#sidebar ul.menu li ul.sub-menu {
+	display: block !important;
+	visibility: visible !important;
+	background-color: rgba(0, 0, 0, 0) !important;
+	margin-left: 1em;
+}
+
+#sidebar ul.menu li.sfHover a {
+	color: #ED1C24;
+}
+
+#sidebar ul.menu .sfHover .current_page_item a, .widget ul.menu .sfHover .current-menu-item a {
+	color: #690;
+	background: none;
+}
+
+/*
+	Sidebar
+
+*/
+
+.home #sidebar {
+	background: #FFF6CB;
+	font-size: 0.9em;
+}
+#sidebar {
+	padding: 24px;
+	background: #FFF6CB;
+}
+@media only screen and (min-width: 980px) {
+.two-col-left #main-sidebar-container #sidebar, .two-col-right #main-sidebar-container #sidebar {
+	  padding: 24px;
+	  width: 25%;
+	}
+}
+
+.widget ul li a {
+  padding: 0;
+  line-height: 1em;
+  text-decoration: none;
+}
+
+.widget_wysija_cont {
+  margin-bottom: 6em;
+}
+.wysija-input {
+	float: left;
+	width: 50%;
+}
+.wysija-submit {
+	width: 36%;
+	height: 28px !important;
+	float: left;
+}
+.wysija-paragraph label {
+	margin: 11px !important;
+	position: absolute;
+}
+.widget_wysija_cont .wysija-submit {
+  margin-top: 2px;
+}
+a.button, a.comment-reply-link, #commentform #submit, .submit, input[type=submit], input.button, button.button, #wrapper .woo-sc-button {
+	line-height: 1;
+	text-transform: none;
+}
+.widget {
+  clear: both;
+}
+
+/*
+	Glossary
+
+*/
+
+span.glossaryLink, a.glossaryLink {
+	cursor: help;
+	color: #222 !important;
+	border-bottom: dotted 1px hsla(358, 85%, 52%, 0.4) !important;
+}
+.carousel span.glossaryLink, .carousel  a.glossaryLink {
+	color: #eee !important;
+	border-bottom: dotted 1px hsla(0, 100%, 100%, 0.2) !important;
+}
+a.glossaryLink:hover {
+	cursor: help;
+	color: blue !important;
+	border-bottom: dotted 1px blue !important;
+}
+#tt {position:absolute; display:block;z-index:9999;}
+
+#tt {
+	color: white !important;
+	font-family: sans-serif !important;
+	font-size: 12px !important;
+}
+#tt * {
+	font-family: sans-serif !important;
+	font-size: 14px !important;
+	color: white !important;
+	margin: 0 !important;
+	line-height: 1.3 !important;
+	padding: 4px !important;
+}
