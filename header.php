@@ -8,7 +8,7 @@
  * @subpackage Template
  */
 ?><!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html lang="de">
 <head>
 <meta charset="<?php echo esc_attr( get_bloginfo( 'charset' ) ); ?>" />
 <title><?php woo_title(); ?></title>

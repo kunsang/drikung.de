@@ -1,0 +1,399 @@
+@charset "UTF-8";
+
+:root {
+--fontSize: 1rem;
+--highlightColor: hwb(50, 90%, 0%);
+--blue: hsl(202, 100%, 23%);
+--red: hsl(358, 85%, 52%);
+}
+
+/*
+  Home
+
+*/
+
+.home .entry-title {display: none}
+
+.home blockquote {
+  margin: 0 0 2em;
+  padding: 1em;
+  background:  var(--highlightColor);
+}
+.home blockquote p {
+  margin: 0;
+  font-style: normal;
+}
+
+.home blockquote:before {
+  display: none;
+}
+
+/*
+  Header
+
+*/
+
+#header {
+  margin: 0;
+  padding: 30px 0 0;
+}
+
+#custom-header {
+  display: inline-block;
+  margin: 0 0 0 8px;
+  vertical-align: top;
+  font-size: 36px;
+  font-weight: 300;
+  text-indent: 0;
+  line-height: 1;
+  overflow: hidden;
+  z-index: 8;
+}
+
+#hung {
+  margin-top: -6px;
+}
+
+h1#custom-header a {
+  text-transform: uppercase;
+  color: var(--blue);
+}
+
+  h1#custom-header a:hover {
+    /*color: color(var(--blue) whiteness(+20%));*/
+    opacity: .8;
+    text-decoration: none;
+  }
+
+span#header-desc {
+  font-size: 18px;
+  top: -1em;
+  position: relative;
+  color: var(--blue);
+}
+
+span.first-word {
+  font-weight: 400;
+  color: rgb(237, 28, 36);
+}
+
+#navigation {margin-bottom: 24px}
+
+/*
+  Typograpghy
+
+*/
+
+h1.title {
+  padding: 10px 0 0;
+}
+
+blockquote {
+  color: #444;
+  font-size: 1.2em;
+  padding: 0px 20px 0px 10px;
+}
+
+.page .container > .row {
+  margin-top: -50px !important;
+}
+
+.btn:hover, .reply a:hover, #searchsubmit:hover, #prevLink a:hover, #nextLink a:hover, .more-link:hover, #submit:hover, #comments #respond input#submit:hover, .container .gform_wrapper input.button:hover {
+  background: #30307c;
+}
+
+blockquote {
+  font-size: 1em;
+  line-height: 1.6;
+  margin: 10px;
+  padding: 0px 10px;
+}
+
+.entry ol {
+  overflow: visible;
+}
+
+hr {
+  clear: both;
+}
+
+/*
+  Tables
+
+*/
+
+table td {
+  padding: 0 1em 1em;
+  margin: 0px;
+  border: none;
+  vertical-align: top;
+}
+
+table p {
+  line-height: 1.5;
+}
+
+/*
+  Images
+
+*/
+
+.entry img.noborder {
+  border: 0;
+}
+
+/*
+  Content Views
+
+*/
+
+.pagination > li > a, .pagination > li > span {
+  cursor: pointer;
+}
+
+.pt-cv-grid .pt-cv-1-col > p {
+  margin: 0 !important;
+  padding: 0;
+}
+
+.home .pt-cv-grid .pt-cv-1-col > a {
+  width: 300px;
+  height: 150px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.home .pt-cv-grid .pt-cv-1-col > a img {
+  width:100%;
+  height: auto;
+}
+
+.home .pt-cv-grid .pt-cv-1-col > a {
+  background: url(images/default-slide.png) no-repeat;
+  background-size: cover;
+}
+
+.home a.pt-cv-readmore {
+  display: none;
+}
+
+.pt-cv-content-item > * {
+  margin-bottom: 0 !important;
+}
+
+.pt-cv-scrollable {
+  margin: 0;
+}
+
+.pt-cv-thumbnail {
+  padding: 0 !important;
+  border: 0 !important;
+}
+
+ul.pt-cv-pagination {
+  padding: 0 !important;
+}
+
+.pt-cv-spinner {
+  top: 6px;
+  left: -20px;
+}
+
+/*  Slider
+*/
+
+.pt-cv-view .carousel-control {top: 50%}
+
+.carousel-caption .pt-cv-content {padding: 0}
+
+.pt-cv-view .carousel-indicators {display: none}
+
+.pt-cv-view .carousel-control.left {
+  left: 20px;
+  right: auto;
+}
+.pt-cv-view .carousel-control.right {right: 0}
+
+/*.carousel-inner {
+  height: 350px;
+}
+*/
+.pt-cv-view .carousel-caption {
+  bottom: 25px;
+  padding: 1em;
+/*  bottom: -40px;
+  transition: bottom .4s ease;*/
+}
+
+/*  .carousel:hover .carousel-caption {
+    bottom: 25px;
+  }*/
+
+.carousel img {
+  border: 0;
+  padding: 0;
+}
+
+.pt-cv-view .carousel-control span {
+  background: hsl(208, 56%, 53%);
+}
+
+.pt-cv-view .carousel-control:hover span {
+  color: #FFF;
+  background: hsl(208, 57%, 33%);
+}
+
+.pt-cv-cap-w-img .pt-cv-title a {
+  font-weight: 600 !important;
+font-size: 0.9em;
+}
+
+/*
+  Google Maps Builder
+
+*/
+
+html .map-icon-art-gallery:before {
+  content: "";
+  display: inline-block ;
+  width: 32px;
+  height: 32px;
+  background: url(../../plugins/google-maps-builder/public/assets/img/default-marker.png) no-repeat;
+
+}
+
+html i.map-icon-art-gallery {
+  top: -4px !important;
+}
+
+/*
+  Posts
+
+*/
+
+
+
+/*
+  Sidebar
+
+*/
+
+#sidebar {
+  padding: 24px;
+  background: var(--highlightColor);
+}
+@media only screen and (min-width: 980px) {
+.two-col-left #main-sidebar-container #sidebar, .two-col-right #main-sidebar-container #sidebar {
+    padding: 24px;
+    width: 27%;
+  }
+}
+
+.widget {
+  clear: both;
+}
+
+.widget ul li a {
+  padding: 0;
+  line-height: 1em;
+  text-decoration: none;
+}
+
+.widget_wysija_cont {
+  margin-bottom: 6em;
+}
+.wysija-input {
+  float: left;
+  width: 50%;
+}
+.wysija-submit {
+  width: 35%;
+  height: 28px !important;
+  float: left;
+}
+.wysija-paragraph label {
+  margin: 11px !important;
+  position: absolute;
+}
+.widget_wysija_cont .wysija-submit {
+  margin-top: 2px;
+}
+a.button, a.comment-reply-link, #commentform #submit, .submit, input[type=submit], input.button, button.button, #wrapper .woo-sc-button {
+  line-height: 1;
+  text-transform: none;
+}
+
+
+/*  Sidebar Menu
+*/
+
+#sidebar ul.menu {
+  font-family: 'Signika', sans-serif;
+  list-style: none;
+}
+  #sidebar ul.menu li {
+    margin: 0;
+    width: 90%;
+  }
+  #sidebar ul.menu li a {
+    color: #ED1C24;
+  }
+
+#sidebar ul.menu li.first-level {
+  padding: 6px 0px 6px 30px;
+  background: var(--highlightColor) url(images/hung-list.png) no-repeat 6px 8px/20px;}
+
+#sidebar ul.menu li ul.sub-menu li ul.sub-menu li {
+  display: block;
+}
+
+#sidebar ul.menu li ul.sub-menu {
+  display: block !important;
+  visibility: visible !important;
+  background-color: rgba(0, 0, 0, 0) !important;
+  margin-left: 1em;
+}
+
+#sidebar ul.menu li.sfHover a {
+  color: #ED1C24;
+}
+
+#sidebar ul.menu .sfHover .current_page_item a, .widget ul.menu .sfHover .current-menu-item a {
+  color: #690;
+  background: none;
+}
+
+/*
+  Glossary
+
+*/
+
+span.glossaryLink, a.glossaryLink {
+  cursor: help;
+  color: #222 !important;
+  border-bottom: dotted 1px hsla(358, 85%, 52%, 0.4) !important;
+}
+.carousel span.glossaryLink, .carousel  a.glossaryLink {
+  color: #eee !important;
+  border-bottom: dotted 1px hsla(0, 100%, 100%, 0.2) !important;
+}
+a.glossaryLink:hover {
+  cursor: help;
+  color: blue !important;
+  border-bottom: dotted 1px blue !important;
+}
+#tt {position:absolute; display:block;z-index:9999;}
+
+#tt {
+  color: white !important;
+  font-family: sans-serif !important;
+  font-size: 12px !important;
+}
+#tt * {
+  font-family: sans-serif !important;
+  font-size: 14px !important;
+  color: white !important;
+  margin: 0 !important;
+  line-height: 1.3 !important;
+  padding: 4px !important;
+}
