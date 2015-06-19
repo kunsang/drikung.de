@@ -195,6 +195,10 @@ table p {
   border: 0 !important;
 }
 
+.pt-cv-title a {
+  font-weight: 400;
+}
+
 ul.pt-cv-pagination {
   padding: 0 !important;
 }
